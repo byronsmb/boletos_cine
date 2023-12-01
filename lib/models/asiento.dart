@@ -1,3 +1,4 @@
+import 'package:boletos_cine/models/fechas.dart';
 import 'package:flutter/material.dart';
 
 class Asiento {

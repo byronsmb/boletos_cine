@@ -29,8 +29,9 @@ class _MainPageState extends State<MainPage> {
 
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 23, 27, 48),
-      appBar: AppBar(title: Text('jola')),
+      appBar: AppBar(title: Text('Los Mercenarios')),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           Stack(
             children: [
@@ -106,9 +107,76 @@ class _MainPageState extends State<MainPage> {
               Text('Disponible'),
             ],
           ),
-          ListTile(
-            leading: Icon(Icons.chair),
-            title: Text('Hola'),
+          Container(
+            height: 60,
+            //color: Colors.amber,
+            //width:
+            child: ListView.builder(
+              itemCount: 6,
+              scrollDirection: Axis.horizontal,
+              itemBuilder: (context, index) {
+                return const Card(
+                  color: Color.fromARGB(255, 235, 93, 12),
+                  shadowColor: Color.fromARGB(255, 235, 93, 12),
+                  elevation: 5,
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 8),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          'MAR',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          '13',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                  ),
+                );
+              },
+            ),
+          ),
+          Container(
+            height: 40,
+            //color: Colors.amber,
+            //width:
+            child: ListView.builder(
+              itemCount: 4,
+              scrollDirection: Axis.horizontal,
+              itemBuilder: (context, index) {
+                return const Card(
+                  color: Color.fromARGB(255, 235, 93, 12),
+                  shadowColor: Color.fromARGB(255, 235, 93, 12),
+                  elevation: 5,
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 10),
+                    child: Center(
+                      child: Text(
+                        '13:00',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                  ),
+                );
+              },
+            ),
+          ),
+          ElevatedButton.icon(
+            onPressed: () {},
+            icon: const Icon(Icons.keyboard_double_arrow_right_outlined),
+            label: Text(
+              'Confirmar',
+              style: TextStyle(color: Colors.white),
+            ),
+            style: ButtonStyle(
+              // Alinear el contenido del botón a la derecha
+              backgroundColor: MaterialStatePropertyAll(
+                Color.fromARGB(255, 235, 93, 12),
+              ),
+            ),
           ),
         ],
       ),

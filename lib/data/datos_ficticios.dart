@@ -1,4 +1,5 @@
 import 'package:boletos_cine/models/asiento.dart';
+import 'package:boletos_cine/models/fechas.dart';
 
 var listaAsientos = [
   Asiento(
@@ -168,5 +169,17 @@ var listaAsientos = [
   ),
   Asiento(
     id: 'N4',
+  ),
+];
+
+var fechasDisponibles = [
+  const Fechas(
+    dia: 'Lunes',
+    fecha: 12,
+    horarios: [
+      '12:30',
+      '15:30',
+      '18:00',
+    ],
   ),
 ];
