@@ -1,5 +1,6 @@
 import 'package:boletos_cine/models/asiento.dart';
 import 'package:boletos_cine/models/fechas.dart';
+import 'package:boletos_cine/models/pelicula.dart';
 
 var listaAsientos = [
   Asiento(
@@ -172,14 +173,36 @@ var listaAsientos = [
   ),
 ];
 
-var fechasDisponibles = [
-  const Fechas(
-    dia: 'Lunes',
-    fecha: 12,
-    horarios: [
-      '12:30',
-      '15:30',
-      '18:00',
+// var fechasDisponibles = [
+//   const Fechas(
+//     dia: 'Lunes',
+//     fecha: 12,
+//     horarios: [
+//       '12:30',
+//       '15:30',
+//       '18:00',
+//     ],
+//   ),
+// ];
+
+const peliculasDisponibles = [
+  Pelicula(
+    titulo: 'Oppenheimer',
+    descripcion:
+        'Impactado por su poder destructivo, Oppenheimer se cuestiona las consecuencias morales de su creación. Desde entonces y durante el resto de su vida, se opondría firmemente a la guerra nuclear y a la todavía más destructiva bomba de hidrógeno.',
+    genero: 'genero',
+    fechas: [
+      Fechas(
+        dia: 'Lunes',
+        fecha: 13,
+        horarios: ['13:00', '15:00'],
+      ),
+      Fechas(
+        dia: 'Martes',
+        fecha: 14,
+        horarios: ['10:00', '12:00'],
+      )
     ],
+    urlPortada: 'assets/images/oppenheimerCover.png',
   ),
 ];
