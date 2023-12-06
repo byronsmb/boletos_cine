@@ -6,10 +6,12 @@ class Pelicula {
     required this.descripcion,
     required this.genero,
     required this.fechas,
+    required this.urlPortada,
   });
 
   final String titulo;
   final String descripcion;
   final String genero;
-  final Fechas fechas;
+  final List<Fechas> fechas;
+  final String urlPortada;
 }
