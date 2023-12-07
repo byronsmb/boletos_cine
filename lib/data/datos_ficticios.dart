@@ -205,4 +205,23 @@ const peliculasDisponibles = [
     ],
     urlPortada: 'assets/images/oppenheimerCover.png',
   ),
+  Pelicula(
+    titulo: 'Oppenheimer',
+    descripcion:
+        'Impactado por su poder destructivo, Oppenheimer se cuestiona las consecuencias morales de su creación. Desde entonces y durante el resto de su vida, se opondría firmemente a la guerra nuclear y a la todavía más destructiva bomba de hidrógeno.',
+    genero: 'genero',
+    fechas: [
+      Fechas(
+        dia: 'Lunes',
+        fecha: 13,
+        horarios: ['13:00', '15:00'],
+      ),
+      Fechas(
+        dia: 'Martes',
+        fecha: 14,
+        horarios: ['10:00', '12:00'],
+      )
+    ],
+    urlPortada: 'assets/images/oppenheimerCover.png',
+  ),
 ];
