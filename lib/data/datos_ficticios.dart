@@ -206,22 +206,22 @@ const peliculasDisponibles = [
     urlPortada: 'assets/images/oppenheimerCover.png',
   ),
   Pelicula(
-    titulo: 'Oppenheimer',
+    titulo: 'Fast X',
     descripcion:
-        'Impactado por su poder destructivo, Oppenheimer se cuestiona las consecuencias morales de su creación. Desde entonces y durante el resto de su vida, se opondría firmemente a la guerra nuclear y a la todavía más destructiva bomba de hidrógeno.',
+        'Durante numerosas misiones más que imposibles, Dom Toretto y su familia han sido capaces de ser más listos, de tener más valor y de ir más rápido que cualquier enemigo que se cruzara con ellos. Pero ahora tendrán que enfrentarse al oponente más letal que jamás hayan conocido',
     genero: 'genero',
     fechas: [
       Fechas(
-        dia: 'Lunes',
+        dia: 'Jueves',
         fecha: 13,
-        horarios: ['13:00', '15:00'],
+        horarios: ['10:00', '12:00'],
       ),
       Fechas(
-        dia: 'Martes',
+        dia: 'Viernes',
         fecha: 14,
-        horarios: ['10:00', '12:00'],
+        horarios: ['17:00', '22:00'],
       )
     ],
-    urlPortada: 'assets/images/oppenheimerCover.png',
+    urlPortada: 'assets/images/fastxCover.png',
   ),
 ];
