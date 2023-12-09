@@ -224,4 +224,42 @@ const peliculasDisponibles = [
     ],
     urlPortada: 'assets/images/fastxCover.png',
   ),
+  Pelicula(
+    titulo: 'Creed III',
+    descripcion:
+        'Durante numerosas misiones más que imposibles, Dom Toretto y su familia han sido capaces de ser más listos, de tener más valor y de ir más rápido que cualquier enemigo que se cruzara con ellos. Pero ahora tendrán que enfrentarse al oponente más letal que jamás hayan conocido',
+    genero: 'genero',
+    fechas: [
+      Fechas(
+        dia: 'Jueves',
+        fecha: 13,
+        horarios: ['10:00', '12:00'],
+      ),
+      Fechas(
+        dia: 'Viernes',
+        fecha: 14,
+        horarios: ['17:00', '22:00'],
+      )
+    ],
+    urlPortada: 'assets/images/Creed_IIICover.jpg',
+  ),
+  Pelicula(
+    titulo: 'Fast X',
+    descripcion:
+        'Durante numerosas misiones más que imposibles, Dom Toretto y su familia han sido capaces de ser más listos, de tener más valor y de ir más rápido que cualquier enemigo que se cruzara con ellos. Pero ahora tendrán que enfrentarse al oponente más letal que jamás hayan conocido',
+    genero: 'genero',
+    fechas: [
+      Fechas(
+        dia: 'Jueves',
+        fecha: 13,
+        horarios: ['10:00', '12:00'],
+      ),
+      Fechas(
+        dia: 'Viernes',
+        fecha: 14,
+        horarios: ['17:00', '22:00'],
+      )
+    ],
+    urlPortada: 'assets/images/jhonwickCover.png',
+  ),
 ];
