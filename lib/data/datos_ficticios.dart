@@ -187,7 +187,7 @@ var listaAsientos = [
 
 const peliculasFuturas = [
   Pelicula(
-    titulo: 'Oppenheimer',
+    titulo: 'Planeta de los Simios: Nuevo reino',
     descripcion:
         'Impactado por su poder destructivo, Oppenheimer se cuestiona las consecuencias morales de su creación. Desde entonces y durante el resto de su vida, se opondría firmemente a la guerra nuclear y a la todavía más destructiva bomba de hidrógeno.',
     genero: 'genero',
@@ -206,7 +206,7 @@ const peliculasFuturas = [
     urlPortada: 'assets/images/oppenheimerCover.png',
   ),
   Pelicula(
-    titulo: 'Fast X',
+    titulo: 'Dune 2',
     descripcion:
         'Durante numerosas misiones más que imposibles, Dom Toretto y su familia han sido capaces de ser más listos, de tener más valor y de ir más rápido que cualquier enemigo que se cruzara con ellos. Pero ahora tendrán que enfrentarse al oponente más letal que jamás hayan conocido',
     genero: 'genero',
@@ -225,7 +225,7 @@ const peliculasFuturas = [
     urlPortada: 'assets/images/fastxCover.png',
   ),
   Pelicula(
-    titulo: 'Creed III',
+    titulo: 'Furiosa',
     descripcion:
         'Durante numerosas misiones más que imposibles, Dom Toretto y su familia han sido capaces de ser más listos, de tener más valor y de ir más rápido que cualquier enemigo que se cruzara con ellos. Pero ahora tendrán que enfrentarse al oponente más letal que jamás hayan conocido',
     genero: 'genero',
