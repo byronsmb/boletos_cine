@@ -185,6 +185,85 @@ var listaAsientos = [
 //   ),
 // ];
 
+const peliculasFuturas = [
+  Pelicula(
+    titulo: 'Oppenheimer',
+    descripcion:
+        'Impactado por su poder destructivo, Oppenheimer se cuestiona las consecuencias morales de su creación. Desde entonces y durante el resto de su vida, se opondría firmemente a la guerra nuclear y a la todavía más destructiva bomba de hidrógeno.',
+    genero: 'genero',
+    fechas: [
+      Fechas(
+        dia: 'Lunes',
+        fecha: 13,
+        horarios: ['13:00', '15:00'],
+      ),
+      Fechas(
+        dia: 'Martes',
+        fecha: 14,
+        horarios: ['10:00', '12:00'],
+      )
+    ],
+    urlPortada: 'assets/images/oppenheimerCover.png',
+  ),
+  Pelicula(
+    titulo: 'Fast X',
+    descripcion:
+        'Durante numerosas misiones más que imposibles, Dom Toretto y su familia han sido capaces de ser más listos, de tener más valor y de ir más rápido que cualquier enemigo que se cruzara con ellos. Pero ahora tendrán que enfrentarse al oponente más letal que jamás hayan conocido',
+    genero: 'genero',
+    fechas: [
+      Fechas(
+        dia: 'Jueves',
+        fecha: 13,
+        horarios: ['10:00', '12:00'],
+      ),
+      Fechas(
+        dia: 'Viernes',
+        fecha: 14,
+        horarios: ['17:00', '22:00'],
+      )
+    ],
+    urlPortada: 'assets/images/fastxCover.png',
+  ),
+  Pelicula(
+    titulo: 'Creed III',
+    descripcion:
+        'Durante numerosas misiones más que imposibles, Dom Toretto y su familia han sido capaces de ser más listos, de tener más valor y de ir más rápido que cualquier enemigo que se cruzara con ellos. Pero ahora tendrán que enfrentarse al oponente más letal que jamás hayan conocido',
+    genero: 'genero',
+    fechas: [
+      Fechas(
+        dia: 'Jueves',
+        fecha: 13,
+        horarios: ['10:00', '12:00'],
+      ),
+      Fechas(
+        dia: 'Viernes',
+        fecha: 14,
+        horarios: ['17:00', '22:00'],
+      )
+    ],
+    urlPortada: 'assets/images/Creed_IIICover.jpg',
+  ),
+  Pelicula(
+    titulo: 'Fast X',
+    descripcion:
+        'Durante numerosas misiones más que imposibles, Dom Toretto y su familia han sido capaces de ser más listos, de tener más valor y de ir más rápido que cualquier enemigo que se cruzara con ellos. Pero ahora tendrán que enfrentarse al oponente más letal que jamás hayan conocido',
+    genero: 'genero',
+    fechas: [
+      Fechas(
+        dia: 'Jueves',
+        fecha: 13,
+        horarios: ['10:00', '12:00'],
+      ),
+      Fechas(
+        dia: 'Viernes',
+        fecha: 14,
+        horarios: ['17:00', '22:00'],
+      )
+    ],
+    urlPortada: 'assets/images/jhonwickCover.png',
+  ),
+];
+
 const peliculasDisponibles = [
   Pelicula(
     titulo: 'Oppenheimer',
