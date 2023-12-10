@@ -301,7 +301,7 @@ const peliculasFuturas = [
         horarios: ['17:00', '22:00'],
       )
     ],
-    urlPortada: 'assets/images/fastxCover.png',
+    urlPortada: 'assets/images/dune2Cover.png',
   ),
   Pelicula(
     titulo: 'Furiosa',
