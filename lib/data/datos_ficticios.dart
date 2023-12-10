@@ -282,7 +282,7 @@ const peliculasFuturas = [
         horarios: ['10:00', '12:00'],
       )
     ],
-    urlPortada: 'assets/images/oppenheimerCover.png',
+    urlPortada: 'assets/images/simiosCover.png',
   ),
   Pelicula(
     titulo: 'Dune 2',
