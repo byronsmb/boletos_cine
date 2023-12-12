@@ -244,7 +244,7 @@ const peliculasDisponibles = [
     urlPortada: 'assets/images/Creed_IIICover.jpg',
   ),
   Pelicula(
-    titulo: 'Fast X',
+    titulo: 'John Wick: Chapter 4',
     descripcion:
         'Durante numerosas misiones más que imposibles, Dom Toretto y su familia han sido capaces de ser más listos, de tener más valor y de ir más rápido que cualquier enemigo que se cruzara con ellos. Pero ahora tendrán que enfrentarse al oponente más letal que jamás hayan conocido',
     genero: 'genero',
@@ -261,6 +261,25 @@ const peliculasDisponibles = [
       )
     ],
     urlPortada: 'assets/images/jhonwickCover.png',
+  ),
+  Pelicula(
+    titulo: 'The Batman',
+    descripcion:
+        'Durante numerosas misiones más que imposibles, Dom Toretto y su familia han sido capaces de ser más listos, de tener más valor y de ir más rápido que cualquier enemigo que se cruzara con ellos. Pero ahora tendrán que enfrentarse al oponente más letal que jamás hayan conocido',
+    genero: 'genero',
+    fechas: [
+      Fechas(
+        dia: 'Jueves',
+        fecha: 13,
+        horarios: ['10:00', '12:00'],
+      ),
+      Fechas(
+        dia: 'Viernes',
+        fecha: 14,
+        horarios: ['17:00', '22:00'],
+      )
+    ],
+    urlPortada: 'assets/images/batmanCover.png',
   ),
 ];
 
@@ -320,7 +339,7 @@ const peliculasFuturas = [
         horarios: ['17:00', '22:00'],
       )
     ],
-    urlPortada: 'assets/images/Creed_IIICover.jpg',
+    urlPortada: 'assets/images/furiosaCover.jpg',
   ),
   Pelicula(
     titulo: 'King Arthur',
@@ -339,6 +358,6 @@ const peliculasFuturas = [
         horarios: ['17:00', '22:00'],
       )
     ],
-    urlPortada: 'assets/images/jhonwickCover.png',
+    urlPortada: 'assets/images/arthurCover.png',
   ),
 ];
