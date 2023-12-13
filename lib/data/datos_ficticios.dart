@@ -286,8 +286,7 @@ const peliculasDisponibles = [
 const peliculasFuturas = [
   Pelicula(
     titulo: 'Planeta de los Simios: Nuevo reino',
-    descripcion:
-        'Impactado por su poder destructivo, Oppenheimer se cuestiona las consecuencias morales de su creación. Desde entonces y durante el resto de su vida, se opondría firmemente a la guerra nuclear y a la todavía más destructiva bomba de hidrógeno.',
+    descripcion: 'PROXIMAMENTE !!',
     genero: 'genero',
     fechas: [
       Fechas(
@@ -305,8 +304,7 @@ const peliculasFuturas = [
   ),
   Pelicula(
     titulo: 'Dune 2',
-    descripcion:
-        'Durante numerosas misiones más que imposibles, Dom Toretto y su familia han sido capaces de ser más listos, de tener más valor y de ir más rápido que cualquier enemigo que se cruzara con ellos. Pero ahora tendrán que enfrentarse al oponente más letal que jamás hayan conocido',
+    descripcion: 'PROXIMAMENTE !!',
     genero: 'genero',
     fechas: [
       Fechas(
@@ -324,8 +322,7 @@ const peliculasFuturas = [
   ),
   Pelicula(
     titulo: 'Furiosa',
-    descripcion:
-        'Durante numerosas misiones más que imposibles, Dom Toretto y su familia han sido capaces de ser más listos, de tener más valor y de ir más rápido que cualquier enemigo que se cruzara con ellos. Pero ahora tendrán que enfrentarse al oponente más letal que jamás hayan conocido',
+    descripcion: 'PROXIMAMENTE !!',
     genero: 'genero',
     fechas: [
       Fechas(
@@ -343,8 +340,7 @@ const peliculasFuturas = [
   ),
   Pelicula(
     titulo: 'King Arthur',
-    descripcion:
-        'Durante numerosas misiones más que imposibles, Dom Toretto y su familia han sido capaces de ser más listos, de tener más valor y de ir más rápido que cualquier enemigo que se cruzara con ellos. Pero ahora tendrán que enfrentarse al oponente más letal que jamás hayan conocido',
+    descripcion: 'PROXIMAMENTE !!',
     genero: 'genero',
     fechas: [
       Fechas(
