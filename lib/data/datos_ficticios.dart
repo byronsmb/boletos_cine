@@ -287,36 +287,26 @@ const peliculasFuturas = [
   Pelicula(
     titulo: 'Planeta de los Simios: Nuevo reino',
     descripcion: 'PROXIMAMENTE !!',
-    genero: 'genero',
+    genero: '',
     fechas: [
       Fechas(
-        dia: 'Lunes',
-        fecha: 13,
-        horarios: ['13:00', '15:00'],
+        dia: '',
+        fecha: 0,
+        horarios: [],
       ),
-      Fechas(
-        dia: 'Martes',
-        fecha: 14,
-        horarios: ['10:00', '12:00'],
-      )
     ],
     urlPortada: 'assets/images/simiosCover.png',
   ),
   Pelicula(
     titulo: 'Dune 2',
     descripcion: 'PROXIMAMENTE !!',
-    genero: 'genero',
+    genero: '',
     fechas: [
       Fechas(
-        dia: 'Jueves',
-        fecha: 13,
-        horarios: ['10:00', '12:00'],
+        dia: '',
+        fecha: 0,
+        horarios: [],
       ),
-      Fechas(
-        dia: 'Viernes',
-        fecha: 14,
-        horarios: ['17:00', '22:00'],
-      )
     ],
     urlPortada: 'assets/images/dune2Cover.png',
   ),
@@ -330,11 +320,6 @@ const peliculasFuturas = [
         fecha: 13,
         horarios: ['10:00', '12:00'],
       ),
-      Fechas(
-        dia: 'Viernes',
-        fecha: 14,
-        horarios: ['17:00', '22:00'],
-      )
     ],
     urlPortada: 'assets/images/furiosaCover.jpg',
   ),
@@ -344,15 +329,10 @@ const peliculasFuturas = [
     genero: 'genero',
     fechas: [
       Fechas(
-        dia: 'Jueves',
-        fecha: 13,
-        horarios: ['10:00', '12:00'],
+        dia: '',
+        fecha: 0,
+        horarios: [],
       ),
-      Fechas(
-        dia: 'Viernes',
-        fecha: 14,
-        horarios: ['17:00', '22:00'],
-      )
     ],
     urlPortada: 'assets/images/arthurCover.png',
   ),
