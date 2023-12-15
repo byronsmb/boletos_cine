@@ -208,7 +208,7 @@ const peliculasDisponibles = [
   Pelicula(
     titulo: 'Fast X',
     descripcion:
-        'Durante numerosas misiones más que imposibles, Dom Toretto y su familia han sido capaces de ser más listos, de tener más valor y de ir más rápido que cualquier enemigo que se cruzara con ellos. Pero ahora tendrán que enfrentarse al oponente más letal que jamás hayan conocido',
+        'Siempre Dom Toretto y su familia han sido capaces de sobrellevarlas. En esta ocasión se enfrentarán al rival más duro hasta la fecha, dispuesto a destrozar todo lo que a Dom le importa.',
     genero: 'genero',
     fechas: [
       Fechas(
@@ -227,7 +227,7 @@ const peliculasDisponibles = [
   Pelicula(
     titulo: 'Creed III',
     descripcion:
-        'Durante numerosas misiones más que imposibles, Dom Toretto y su familia han sido capaces de ser más listos, de tener más valor y de ir más rápido que cualquier enemigo que se cruzara con ellos. Pero ahora tendrán que enfrentarse al oponente más letal que jamás hayan conocido',
+        'Adonis Creed está prosperando en su carrera y en su vida familiar. Cuando un amigo de la infancia y antiguo prodigio del boxeo reaparece tras cumplir condena en la cárcel, está ansioso por demostrar que merece su oportunidad en el ring.',
     genero: 'genero',
     fechas: [
       Fechas(
@@ -246,7 +246,7 @@ const peliculasDisponibles = [
   Pelicula(
     titulo: 'John Wick: Chapter 4',
     descripcion:
-        'Durante numerosas misiones más que imposibles, Dom Toretto y su familia han sido capaces de ser más listos, de tener más valor y de ir más rápido que cualquier enemigo que se cruzara con ellos. Pero ahora tendrán que enfrentarse al oponente más letal que jamás hayan conocido',
+        'El marqués Vincent de Gramont pretende matar a John Wick para afianzar su poder en la Orden Suprema. Sin embargo, John tratará de adelantarse a cada uno de sus movimientos hasta lograr enfrentarse cara a cara con su peor enemigo.',
     genero: 'genero',
     fechas: [
       Fechas(
@@ -265,7 +265,7 @@ const peliculasDisponibles = [
   Pelicula(
     titulo: 'The Batman',
     descripcion:
-        'Durante numerosas misiones más que imposibles, Dom Toretto y su familia han sido capaces de ser más listos, de tener más valor y de ir más rápido que cualquier enemigo que se cruzara con ellos. Pero ahora tendrán que enfrentarse al oponente más letal que jamás hayan conocido',
+        'En su segundo año luchando contra el crimen, Batman explora la corrupción existente en la ciudad de Gotham y el vínculo de esta con su propia familia. Además, entrará en conflicto con un asesino en serie conocido como "el Acertijo".',
     genero: 'genero',
     fechas: [
       Fechas(
