@@ -17,102 +17,132 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
     double screenHeight = MediaQuery.of(context).size.height;
-    return Scaffold(
-      body: Column(
-        children: [
-          Container(
-            color: Colors.pink,
-            height: screenHeight * 0.55,
-            //width: MediaQuery.of(context).size.width,
-            child: CarouselSlider.builder(
-              options: CarouselOptions(
-                height: screenHeight * 0.5,
-                autoPlay: false,
-                enlargeCenterPage: true,
-                viewportFraction: 0.6,
-                aspectRatio: 2.0,
-                initialPage: 2,
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text("dfvdf"),
+          actions: [
+            Icon(Icons.abc),
+          ],
+        ),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            Align(
+              alignment: Alignment.topLeft,
+              child: Text(
+                "Cartelera",
+                style: TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-              itemCount: peliculasDisponibles.length,
-              itemBuilder: (context, index, realIndex) {
-                return Stack(
-                  children: [
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Container(
-                        height: screenHeight * 0.45,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          image: DecorationImage(
-                            image: AssetImage(
-                                peliculasDisponibles[index].urlPortada),
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                      ),
-                    ),
-                    Positioned(
-                      bottom: 10,
-                      child: Text(
-                        peliculasDisponibles[index].titulo,
-                        style: const TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 23,
-                          overflow: TextOverflow.ellipsis,
-                        ),
-                        maxLines: 1,
-                      ),
-                    ),
-                  ],
-                );
-              },
             ),
-          ),
-          Container(
-            color: Colors.red,
-            height: screenHeight * 0.3,
-            //width: MediaQuery.of(context).size.width,
-            child: ListView.builder(
-              scrollDirection: Axis.horizontal,
-              itemCount: peliculasFuturas.length,
-              itemBuilder: (context, index) {
-                return Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Column(
+            Container(
+              color: Colors.pink,
+              height: screenHeight * 0.48,
+              //width: MediaQuery.of(context).size.width,
+              child: CarouselSlider.builder(
+                options: CarouselOptions(
+                  height: screenHeight * 0.45,
+                  autoPlay: false,
+                  enlargeCenterPage: true,
+                  viewportFraction: 0.55,
+                  aspectRatio: 2.0,
+                  initialPage: 2,
+                ),
+                itemCount: peliculasDisponibles.length,
+                itemBuilder: (context, index, realIndex) {
+                  return Stack(
                     children: [
                       ClipRRect(
                         borderRadius: BorderRadius.circular(20),
                         child: Container(
-                          height: screenHeight * 0.25,
-                          width: screenWidth * 0.38,
+                          height: screenHeight * 0.40,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20),
-                          ),
-                          child: Image.asset(
-                            peliculasFuturas[index].urlPortada,
+                            image: DecorationImage(
+                              image: AssetImage(
+                                  peliculasDisponibles[index].urlPortada),
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
                       ),
-                      Container(
-                        width: screenWidth * 0.38,
+                      Positioned(
+                        bottom: 10,
                         child: Text(
-                          peliculasFuturas[index].titulo,
+                          peliculasDisponibles[index].titulo,
                           style: const TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 15,
+                            fontSize: 23,
                             overflow: TextOverflow.ellipsis,
                           ),
-                          textAlign: TextAlign.left,
                           maxLines: 1,
                         ),
                       ),
                     ],
-                  ),
-                );
-              },
+                  );
+                },
+              ),
             ),
-          ),
-        ],
+            Align(
+              alignment: Alignment.topLeft,
+              child: Text(
+                "Próximamente",
+                style: TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            Container(
+              color: Colors.red,
+              height: screenHeight * 0.27,
+              //width: MediaQuery.of(context).size.width,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: peliculasFuturas.length,
+                itemBuilder: (context, index) {
+                  return Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Column(
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(15),
+                          child: Container(
+                            height: screenHeight * 0.22,
+                            width: screenWidth * 0.3,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(30),
+                            ),
+                            child: Image.asset(
+                              peliculasFuturas[index].urlPortada,
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                        Container(
+                          width: screenWidth * 0.3,
+                          child: Text(
+                            peliculasFuturas[index].titulo,
+                            style: const TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 15,
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                            textAlign: TextAlign.left,
+                            maxLines: 1,
+                          ),
+                        ),
+                      ],
+                    ),
+                  );
+                },
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
