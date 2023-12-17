@@ -190,7 +190,7 @@ const peliculasDisponibles = [
     titulo: 'Oppenheimer',
     descripcion:
         'Impactado por su poder destructivo, Oppenheimer se cuestiona las consecuencias morales de su creación. Desde entonces y durante el resto de su vida, se opondría firmemente a la guerra nuclear y a la todavía más destructiva bomba de hidrógeno.',
-    genero: 'genero',
+    genero: 'Biopic, Histórico, Suspense',
     fechas: [
       Fechas(
         dia: 'Lunes',
@@ -209,7 +209,7 @@ const peliculasDisponibles = [
     titulo: 'Fast X',
     descripcion:
         'Siempre Dom Toretto y su familia han sido capaces de sobrellevarlas. En esta ocasión se enfrentarán al rival más duro hasta la fecha, dispuesto a destrozar todo lo que a Dom le importa.',
-    genero: 'genero',
+    genero: 'Acción',
     fechas: [
       Fechas(
         dia: 'Jueves',
@@ -228,7 +228,7 @@ const peliculasDisponibles = [
     titulo: 'Creed III',
     descripcion:
         'Adonis Creed está prosperando en su carrera y en su vida familiar. Cuando un amigo de la infancia y antiguo prodigio del boxeo reaparece tras cumplir condena en la cárcel, está ansioso por demostrar que merece su oportunidad en el ring.',
-    genero: 'genero',
+    genero: 'Drama',
     fechas: [
       Fechas(
         dia: 'Jueves',
@@ -247,7 +247,7 @@ const peliculasDisponibles = [
     titulo: 'John Wick: Chapter 4',
     descripcion:
         'El marqués Vincent de Gramont pretende matar a John Wick para afianzar su poder en la Orden Suprema. Sin embargo, John tratará de adelantarse a cada uno de sus movimientos hasta lograr enfrentarse cara a cara con su peor enemigo.',
-    genero: 'genero',
+    genero: 'Acción',
     fechas: [
       Fechas(
         dia: 'Jueves',
@@ -266,7 +266,7 @@ const peliculasDisponibles = [
     titulo: 'The Batman',
     descripcion:
         'En su segundo año luchando contra el crimen, Batman explora la corrupción existente en la ciudad de Gotham y el vínculo de esta con su propia familia. Además, entrará en conflicto con un asesino en serie conocido como "el Acertijo".',
-    genero: 'genero',
+    genero: 'Acción, Crimen, Suspense',
     fechas: [
       Fechas(
         dia: 'Jueves',
