@@ -93,7 +93,9 @@ class DetallePelicula extends StatelessWidget {
                         child: ElevatedButton(
                           onPressed: () {
                             Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => ComprarAsientos(),
+                              builder: (context) => ComprarAsientos(
+                                peliculaActual: peliculaActual,
+                              ),
                             ));
                           },
                           style: const ButtonStyle(

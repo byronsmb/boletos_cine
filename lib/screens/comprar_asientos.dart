@@ -2,11 +2,12 @@ import 'dart:ffi';
 
 import 'package:boletos_cine/data/datos_ficticios.dart';
 import 'package:boletos_cine/models/asiento.dart';
+import 'package:boletos_cine/models/pelicula.dart';
 import 'package:flutter/material.dart';
 
 class ComprarAsientos extends StatefulWidget {
-  const ComprarAsientos({super.key});
-
+  const ComprarAsientos({super.key, required this.peliculaActual});
+  final Pelicula peliculaActual;
   @override
   State<ComprarAsientos> createState() => _ComprarAsientosState();
 }
@@ -29,7 +30,7 @@ class _ComprarAsientosState extends State<ComprarAsientos> {
 
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 23, 27, 48),
-      appBar: AppBar(title: Text('Los Mercenarios')),
+      appBar: AppBar(title: Text(widget.peliculaActual.titulo)),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
@@ -164,17 +165,22 @@ class _ComprarAsientosState extends State<ComprarAsientos> {
               },
             ),
           ),
-          ElevatedButton.icon(
+          ElevatedButton(
             onPressed: () {},
-            icon: const Icon(Icons.keyboard_double_arrow_right_outlined),
-            label: Text(
-              'Confirmar',
-              style: TextStyle(color: Colors.white),
-            ),
-            style: ButtonStyle(
-              // Alinear el contenido del botón a la derecha
+            style: const ButtonStyle(
               backgroundColor: MaterialStatePropertyAll(
-                Color.fromARGB(255, 235, 93, 12),
+                Color.fromARGB(255, 235, 64, 12),
+              ),
+              shadowColor: MaterialStatePropertyAll(
+                Color.fromARGB(255, 230, 164, 127),
+              ),
+              elevation: MaterialStatePropertyAll(5),
+            ),
+            child: const Text(
+              'Confirmar',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 16,
               ),
             ),
           ),
