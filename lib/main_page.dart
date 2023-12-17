@@ -2,6 +2,7 @@ import 'dart:ffi';
 
 import 'package:boletos_cine/data/datos_ficticios.dart';
 import 'package:boletos_cine/models/asiento.dart';
+import 'package:boletos_cine/screens/detalle_pelicula.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
@@ -39,7 +40,7 @@ class _MainPageState extends State<MainPage> {
               ),
             ),
             Container(
-              color: Colors.pink,
+              //color: Colors.pink,
               height: screenHeight * 0.48,
               //width: MediaQuery.of(context).size.width,
               child: CarouselSlider.builder(
@@ -57,14 +58,23 @@ class _MainPageState extends State<MainPage> {
                     children: [
                       ClipRRect(
                         borderRadius: BorderRadius.circular(20),
-                        child: Container(
-                          height: screenHeight * 0.40,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            image: DecorationImage(
-                              image: AssetImage(
-                                  peliculasDisponibles[index].urlPortada),
-                              fit: BoxFit.cover,
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => DetallePelicula(
+                                peliculaActual: peliculasDisponibles[index],
+                              ),
+                            ));
+                          },
+                          child: Container(
+                            height: screenHeight * 0.40,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              image: DecorationImage(
+                                image: AssetImage(
+                                    peliculasDisponibles[index].urlPortada),
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
                         ),
@@ -97,7 +107,7 @@ class _MainPageState extends State<MainPage> {
               ),
             ),
             Container(
-              color: Colors.red,
+              //color: Colors.red,
               height: screenHeight * 0.27,
               //width: MediaQuery.of(context).size.width,
               child: ListView.builder(
