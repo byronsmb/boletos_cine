@@ -21,7 +21,7 @@ class _MainPageState extends State<MainPage> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: Text("dfvdf"),
+          title: const Icon(Icons.vertical_distribute_sharp),
           actions: [
             Icon(Icons.abc),
           ],
@@ -29,7 +29,7 @@ class _MainPageState extends State<MainPage> {
         body: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            Align(
+            const Align(
               alignment: Alignment.topLeft,
               child: Text(
                 "Cartelera",

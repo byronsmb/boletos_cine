@@ -116,7 +116,7 @@ class _ComprarAsientosState extends State<ComprarAsientos> {
               itemCount: 6,
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
-                return const Card(
+                return Card(
                   color: Color.fromARGB(255, 235, 93, 12),
                   shadowColor: Color.fromARGB(255, 235, 93, 12),
                   elevation: 5,
@@ -130,7 +130,7 @@ class _ComprarAsientosState extends State<ComprarAsientos> {
                           style: TextStyle(fontWeight: FontWeight.bold),
                         ),
                         Text(
-                          '13',
+                          (13 + index).toString(),
                           style: TextStyle(fontWeight: FontWeight.bold),
                         ),
                       ],
@@ -148,7 +148,7 @@ class _ComprarAsientosState extends State<ComprarAsientos> {
               itemCount: 4,
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
-                return const Card(
+                return Card(
                   color: Color.fromARGB(255, 235, 93, 12),
                   shadowColor: Color.fromARGB(255, 235, 93, 12),
                   elevation: 5,
@@ -156,7 +156,7 @@ class _ComprarAsientosState extends State<ComprarAsientos> {
                     padding: EdgeInsets.symmetric(horizontal: 10),
                     child: Center(
                       child: Text(
-                        '13:00',
+                        '${13 + index + 1}:00',
                         style: TextStyle(fontWeight: FontWeight.bold),
                       ),
                     ),

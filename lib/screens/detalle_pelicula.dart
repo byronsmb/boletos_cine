@@ -122,30 +122,36 @@ class DetallePelicula extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 20,
+              top: 10,
               child: Container(
-                padding: EdgeInsets.symmetric(horizontal: 20),
+                padding: const EdgeInsets.symmetric(horizontal: 20),
                 width: MediaQuery.of(context).size.width,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 23, 27, 48),
-                        borderRadius: BorderRadius.circular(10),
+                    InkWell(
+                      onTap: () {
+                        Navigator.pop(context);
+                      },
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 23, 27, 48),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        height: 35,
+                        width: 35,
+                        child:
+                            const Center(child: Icon(Icons.arrow_back_ios_new)),
                       ),
-                      height: 35,
-                      width: 35,
-                      child: Center(child: Icon(Icons.arrow_back_ios_new)),
                     ),
                     Container(
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 23, 27, 48),
+                        color: const Color.fromARGB(255, 23, 27, 48),
                         borderRadius: BorderRadius.circular(10),
                       ),
                       height: 35,
                       width: 35,
-                      child: Center(child: Icon(Icons.play_circle)),
+                      child: const Center(child: Icon(Icons.play_circle)),
                     ),
                   ],
                 ),
