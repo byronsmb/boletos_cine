@@ -1,4 +1,5 @@
 import 'package:boletos_cine/models/pelicula.dart';
+import 'package:boletos_cine/screens/comprar_asientos.dart';
 import 'package:flutter/material.dart';
 
 class DetallePelicula extends StatelessWidget {
@@ -90,7 +91,11 @@ class DetallePelicula extends StatelessWidget {
                       Align(
                         alignment: Alignment.bottomCenter,
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => ComprarAsientos(),
+                            ));
+                          },
                           style: const ButtonStyle(
                             backgroundColor: MaterialStatePropertyAll(
                               Color.fromARGB(255, 235, 93, 12),
