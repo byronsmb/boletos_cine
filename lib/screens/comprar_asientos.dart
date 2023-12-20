@@ -149,8 +149,8 @@ class _ComprarAsientosState extends State<ComprarAsientos> {
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
                 return Card(
-                  color: Color.fromARGB(255, 235, 93, 12),
-                  shadowColor: Color.fromARGB(255, 235, 93, 12),
+                  color: const Color.fromARGB(255, 235, 93, 12),
+                  shadowColor: const Color.fromARGB(255, 235, 93, 12),
                   elevation: 5,
                   child: Padding(
                     padding: EdgeInsets.symmetric(horizontal: 10),
