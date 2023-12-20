@@ -20,11 +20,11 @@ class DetallePelicula extends StatelessWidget {
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
                     colors: [
-                      Color.fromARGB(255, 23, 27, 48).withOpacity(0.3),
-                      Color.fromARGB(255, 23, 27, 48).withOpacity(0.3),
-                      Color.fromARGB(255, 23, 27, 48),
-                      Color.fromARGB(255, 23, 27, 48),
-                      Color.fromARGB(255, 23, 27, 48)
+                      const Color.fromARGB(255, 23, 27, 48).withOpacity(0.3),
+                      const Color.fromARGB(255, 23, 27, 48).withOpacity(0.3),
+                      const Color.fromARGB(255, 23, 27, 48),
+                      const Color.fromARGB(255, 23, 27, 48),
+                      const Color.fromARGB(255, 23, 27, 48)
                     ],
                   ),
                 ),

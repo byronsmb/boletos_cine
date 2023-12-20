@@ -1,7 +1,7 @@
 import 'dart:ffi';
 
 import 'package:boletos_cine/data/datos_ficticios.dart';
-import 'package:boletos_cine/models/asiento.dart';
+
 import 'package:boletos_cine/screens/detalle_pelicula.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
@@ -22,7 +22,7 @@ class _MainPageState extends State<MainPage> {
       child: Scaffold(
         appBar: AppBar(
           title: const Icon(Icons.vertical_distribute_sharp),
-          actions: [
+          actions: const [
             Icon(Icons.abc),
           ],
         ),
@@ -96,7 +96,7 @@ class _MainPageState extends State<MainPage> {
                 },
               ),
             ),
-            Align(
+            const Align(
               alignment: Alignment.topLeft,
               child: Text(
                 "Próximamente",

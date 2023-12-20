@@ -117,21 +117,21 @@ class _ComprarAsientosState extends State<ComprarAsientos> {
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
                 return Card(
-                  color: Color.fromARGB(255, 235, 93, 12),
-                  shadowColor: Color.fromARGB(255, 235, 93, 12),
+                  color: const Color.fromARGB(255, 235, 93, 12),
+                  shadowColor: const Color.fromARGB(255, 235, 93, 12),
                   elevation: 5,
                   child: Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 8),
+                    padding: const EdgeInsets.symmetric(horizontal: 8),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(
+                        const Text(
                           'MAR',
                           style: TextStyle(fontWeight: FontWeight.bold),
                         ),
                         Text(
                           (13 + index).toString(),
-                          style: TextStyle(fontWeight: FontWeight.bold),
+                          style: const TextStyle(fontWeight: FontWeight.bold),
                         ),
                       ],
                     ),
@@ -153,11 +153,11 @@ class _ComprarAsientosState extends State<ComprarAsientos> {
                   shadowColor: const Color.fromARGB(255, 235, 93, 12),
                   elevation: 5,
                   child: Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 10),
+                    padding: const EdgeInsets.symmetric(horizontal: 10),
                     child: Center(
                       child: Text(
                         '${13 + index + 1}:00',
-                        style: TextStyle(fontWeight: FontWeight.bold),
+                        style: const TextStyle(fontWeight: FontWeight.bold),
                       ),
                     ),
                   ),
@@ -199,7 +199,7 @@ class _ComprarAsientosState extends State<ComprarAsientos> {
       child: Icon(
         lista[index].asientoIcon,
         color: lista[index].isSelected
-            ? Color.fromARGB(
+            ? const Color.fromARGB(
                 255, 235, 93, 12) //const Color.fromARGB(255, 254, 94, 2)
             : Colors.white,
       ),
