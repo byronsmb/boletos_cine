@@ -26,7 +26,6 @@ class MyApp extends StatelessWidget {
         //appBarTheme: AppBarTheme(backgroundColor: Colors.),
         useMaterial3: true,
       ),
-
       // darkTheme: ThemeData(
       //   brightness: Brightness.dark,
       //   /* dark theme settings */

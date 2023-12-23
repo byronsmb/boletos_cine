@@ -173,18 +173,6 @@ var listaAsientos = [
   ),
 ];
 
-// var fechasDisponibles = [
-//   const Fechas(
-//     dia: 'Lunes',
-//     fecha: 12,
-//     horarios: [
-//       '12:30',
-//       '15:30',
-//       '18:00',
-//     ],
-//   ),
-// ];
-
 const peliculasDisponibles = [
   Pelicula(
     titulo: 'Oppenheimer',
