@@ -25,17 +25,17 @@ class _ComprarAsientosState extends State<ComprarAsientos> {
     // Dividir la lista en dos partes
     //Utilizando ~/ para obtener la mitad de la longitud
 
-    primeraMitad = widget.peliculaActual.asientos
-        .sublist(0, listaAsientos.length ~/ 2); //(startIndex, endIndex)
+    primeraMitad = widget.peliculaActual.asientos.sublist(
+        0, widget.peliculaActual.asientos.length ~/ 2); //(startIndex, endIndex)
     segundaMitad = widget.peliculaActual.asientos
         .sublist(widget.peliculaActual.asientos.length ~/ 2); //(endIndex)
+    for (var asiento in primeraMitad) {
+      print(asiento.isSelected);
+    }
   }
 
   @override
   Widget build(BuildContext context) {
-    List<Asiento> primeraMitad = widget.peliculaActual.asientos
-        .sublist(0, listaAsientos.length ~/ 2); //(startIndex, endIndex)
-
     final screenWidth = MediaQuery.of(context).size.width;
     final screenHeight = MediaQuery.of(context).size.height;
 
