@@ -173,7 +173,7 @@ var listaAsientos = [
   ),
 ];
 
-const peliculasDisponibles = [
+var peliculasDisponibles = [
   Pelicula(
     titulo: 'Oppenheimer',
     descripcion:
@@ -192,6 +192,7 @@ const peliculasDisponibles = [
       )
     ],
     urlPortada: 'assets/images/oppenheimerCover.png',
+    asientos: listaAsientos,
   ),
   Pelicula(
     titulo: 'Fast X',
@@ -211,6 +212,7 @@ const peliculasDisponibles = [
       )
     ],
     urlPortada: 'assets/images/fastxCover.png',
+    asientos: listaAsientos,
   ),
   Pelicula(
     titulo: 'Creed III',
@@ -230,6 +232,7 @@ const peliculasDisponibles = [
       )
     ],
     urlPortada: 'assets/images/Creed_IIICover.jpg',
+    asientos: listaAsientos,
   ),
   Pelicula(
     titulo: 'John Wick: Chapter 4',
@@ -249,6 +252,7 @@ const peliculasDisponibles = [
       )
     ],
     urlPortada: 'assets/images/jhonwickCover.png',
+    asientos: listaAsientos,
   ),
   Pelicula(
     titulo: 'The Batman',
@@ -268,10 +272,11 @@ const peliculasDisponibles = [
       )
     ],
     urlPortada: 'assets/images/batmanCover.png',
+    asientos: listaAsientos,
   ),
 ];
 
-const peliculasFuturas = [
+var peliculasFuturas = [
   Pelicula(
     titulo: 'Planeta de los Simios: Nuevo reino',
     descripcion: 'PROXIMAMENTE !!',
@@ -284,6 +289,7 @@ const peliculasFuturas = [
       ),
     ],
     urlPortada: 'assets/images/simiosCover.png',
+    asientos: [],
   ),
   Pelicula(
     titulo: 'Dune 2',
@@ -297,6 +303,7 @@ const peliculasFuturas = [
       ),
     ],
     urlPortada: 'assets/images/dune2Cover.png',
+    asientos: [],
   ),
   Pelicula(
     titulo: 'Furiosa',
@@ -310,6 +317,7 @@ const peliculasFuturas = [
       ),
     ],
     urlPortada: 'assets/images/furiosaCover.jpg',
+    asientos: [],
   ),
   Pelicula(
     titulo: 'King Arthur',
@@ -323,5 +331,6 @@ const peliculasFuturas = [
       ),
     ],
     urlPortada: 'assets/images/arthurCover.png',
+    asientos: [],
   ),
 ];

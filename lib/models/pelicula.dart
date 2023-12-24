@@ -1,3 +1,4 @@
+import 'package:boletos_cine/models/asiento.dart';
 import 'package:boletos_cine/models/fechas.dart';
 
 class Pelicula {
@@ -7,6 +8,7 @@ class Pelicula {
     required this.genero,
     required this.fechas,
     required this.urlPortada,
+    required this.asientos,
   });
 
   final String titulo;
@@ -14,4 +16,6 @@ class Pelicula {
   final String genero;
   final List<Fechas> fechas;
   final String urlPortada;
+
+  final List<Asiento> asientos;
 }
