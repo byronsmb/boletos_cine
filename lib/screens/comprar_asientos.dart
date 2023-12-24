@@ -16,15 +16,26 @@ class _ComprarAsientosState extends State<ComprarAsientos> {
   var isSelected = false;
   int spaceIndex = 4;
 
-  // Dividir la lista en dos partes
-  //Utilizando ~/ para obtener la mitad de la longitud
-  List<Asiento> primeraMitad = listaAsientos.sublist(
-      0, listaAsientos.length ~/ 2); //(startIndex, endIndex)
-  List<Asiento> segundaMitad =
-      listaAsientos.sublist(listaAsientos.length ~/ 2); //(endIndex)
+  List<Asiento> primeraMitad = [];
+  List<Asiento> segundaMitad = [];
+
+  @override
+  void initState() {
+    super.initState();
+    // Dividir la lista en dos partes
+    //Utilizando ~/ para obtener la mitad de la longitud
+
+    primeraMitad = widget.peliculaActual.asientos
+        .sublist(0, listaAsientos.length ~/ 2); //(startIndex, endIndex)
+    segundaMitad = widget.peliculaActual.asientos
+        .sublist(widget.peliculaActual.asientos.length ~/ 2); //(endIndex)
+  }
 
   @override
   Widget build(BuildContext context) {
+    List<Asiento> primeraMitad = widget.peliculaActual.asientos
+        .sublist(0, listaAsientos.length ~/ 2); //(startIndex, endIndex)
+
     final screenWidth = MediaQuery.of(context).size.width;
     final screenHeight = MediaQuery.of(context).size.height;
 
@@ -51,12 +62,9 @@ class _ComprarAsientosState extends State<ComprarAsientos> {
                         itemCount: primeraMitad.length,
                         gridDelegate:
                             const SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount:
-                              4, // Número de columnas en la cuadrícula
-                          crossAxisSpacing:
-                              8, // Espaciado horizontal entre los elementos
-                          mainAxisSpacing:
-                              20, // Espaciado vertical entre los elementos),
+                          crossAxisCount: 4, // Número de columnas
+                          crossAxisSpacing: 8, // Espaciado horizontal
+                          mainAxisSpacing: 20, // Espaciado vertical
                         ),
                         itemBuilder: (context, index) {
                           return itemAsiento(primeraMitad, index);
