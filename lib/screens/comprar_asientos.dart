@@ -29,9 +29,6 @@ class _ComprarAsientosState extends State<ComprarAsientos> {
         0, widget.peliculaActual.asientos.length ~/ 2); //(startIndex, endIndex)
     segundaMitad = widget.peliculaActual.asientos
         .sublist(widget.peliculaActual.asientos.length ~/ 2); //(endIndex)
-    for (var asiento in primeraMitad) {
-      print(asiento.isSelected);
-    }
   }
 
   @override
