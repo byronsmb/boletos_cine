@@ -118,17 +118,20 @@ class _MainPageState extends State<MainPage> {
                     padding: const EdgeInsets.all(8.0),
                     child: Column(
                       children: [
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(15),
-                          child: Container(
-                            height: screenHeight * 0.22,
-                            width: screenWidth * 0.3,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(30),
-                            ),
-                            child: Image.asset(
-                              peliculasFuturas[index].urlPortada,
-                              fit: BoxFit.cover,
+                        InkWell(
+                          onTap: () {},
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(15),
+                            child: Container(
+                              height: screenHeight * 0.22,
+                              width: screenWidth * 0.3,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(30),
+                              ),
+                              child: Image.asset(
+                                peliculasFuturas[index].urlPortada,
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
                         ),
