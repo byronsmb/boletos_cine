@@ -67,6 +67,7 @@ class _ComprarAsientosState extends State<ComprarAsientos> {
                           return itemAsiento(primeraMitad, index);
                         },
                       ),
+                      
                     ),
                     SizedBox(width: screenWidth * 0.1),
                     Container(
