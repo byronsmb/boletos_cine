@@ -119,7 +119,13 @@ class _MainPageState extends State<MainPage> {
                     child: Column(
                       children: [
                         InkWell(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => DetallePelicula(
+                                peliculaActual: peliculasDisponibles[index],
+                              ),
+                            ));
+                          },
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(15),
                             child: Container(
