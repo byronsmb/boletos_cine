@@ -122,7 +122,7 @@ class _MainPageState extends State<MainPage> {
                           onTap: () {
                             Navigator.of(context).push(MaterialPageRoute(
                               builder: (context) => DetallePelicula(
-                                peliculaActual: peliculasDisponibles[index],
+                                peliculaActual: peliculasFuturas[index],
                               ),
                             ));
                           },
