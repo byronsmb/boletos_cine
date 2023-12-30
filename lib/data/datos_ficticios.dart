@@ -179,7 +179,7 @@ var peliculasDisponibles = [
     descripcion:
         'Impactado por su poder destructivo, Oppenheimer se cuestiona las consecuencias morales de su creación. Desde entonces y durante el resto de su vida, se opondría firmemente a la guerra nuclear y a la todavía más destructiva bomba de hidrógeno.',
     genero: 'Biopic, Histórico, Suspense',
-    fechas: [
+    fechas: const [
       Fechas(
         dia: 'Lunes',
         fecha: 13,
@@ -199,7 +199,7 @@ var peliculasDisponibles = [
     descripcion:
         'Siempre Dom Toretto y su familia han sido capaces de sobrellevarlas. En esta ocasión se enfrentarán al rival más duro hasta la fecha, dispuesto a destrozar todo lo que a Dom le importa.',
     genero: 'Acción',
-    fechas: [
+    fechas: const [
       Fechas(
         dia: 'Jueves',
         fecha: 13,
@@ -219,7 +219,7 @@ var peliculasDisponibles = [
     descripcion:
         'Adonis Creed está prosperando en su carrera y en su vida familiar. Cuando un amigo de la infancia y antiguo prodigio del boxeo reaparece tras cumplir condena en la cárcel, está ansioso por demostrar que merece su oportunidad en el ring.',
     genero: 'Drama',
-    fechas: [
+    fechas: const [
       Fechas(
         dia: 'Jueves',
         fecha: 13,
@@ -239,7 +239,7 @@ var peliculasDisponibles = [
     descripcion:
         'El marqués Vincent de Gramont pretende matar a John Wick para afianzar su poder en la Orden Suprema. Sin embargo, John tratará de adelantarse a cada uno de sus movimientos hasta lograr enfrentarse cara a cara con su peor enemigo.',
     genero: 'Acción',
-    fechas: [
+    fechas: const [
       Fechas(
         dia: 'Jueves',
         fecha: 13,
@@ -259,7 +259,7 @@ var peliculasDisponibles = [
     descripcion:
         'En su segundo año luchando contra el crimen, Batman explora la corrupción existente en la ciudad de Gotham y el vínculo de esta con su propia familia. Además, entrará en conflicto con un asesino en serie conocido como "el Acertijo".',
     genero: 'Acción, Crimen, Suspense',
-    fechas: [
+    fechas: const [
       Fechas(
         dia: 'Jueves',
         fecha: 13,
@@ -277,7 +277,7 @@ var peliculasDisponibles = [
 ];
 
 var peliculasFuturas = [
-  Pelicula(
+  const Pelicula(
     titulo: 'Planeta de los Simios: Nuevo reino',
     descripcion: 'PROXIMAMENTE !!',
     genero: '',
@@ -291,7 +291,7 @@ var peliculasFuturas = [
     urlPortada: 'assets/images/simiosCover.png',
     asientos: [],
   ),
-  Pelicula(
+  const Pelicula(
     titulo: 'Dune 2',
     descripcion: 'PROXIMAMENTE !!',
     genero: '',
@@ -305,7 +305,7 @@ var peliculasFuturas = [
     urlPortada: 'assets/images/dune2Cover.png',
     asientos: [],
   ),
-  Pelicula(
+  const Pelicula(
     titulo: 'Furiosa',
     descripcion: 'PROXIMAMENTE !!',
     genero: 'genero',
@@ -319,7 +319,7 @@ var peliculasFuturas = [
     urlPortada: 'assets/images/furiosaCover.jpg',
     asientos: [],
   ),
-  Pelicula(
+  const Pelicula(
     titulo: 'King Arthur',
     descripcion: 'PROXIMAMENTE !!',
     genero: 'genero',
