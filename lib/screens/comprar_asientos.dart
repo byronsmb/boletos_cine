@@ -67,7 +67,6 @@ class _ComprarAsientosState extends State<ComprarAsientos> {
                           return itemAsiento(primeraMitad, index);
                         },
                       ),
-                      
                     ),
                     SizedBox(width: screenWidth * 0.1),
                     Container(
@@ -122,24 +121,27 @@ class _ComprarAsientosState extends State<ComprarAsientos> {
               itemCount: 6,
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
-                return Card(
-                  color: const Color.fromARGB(255, 235, 93, 12),
-                  shadowColor: const Color.fromARGB(255, 235, 93, 12),
-                  elevation: 5,
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 8),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const Text(
-                          'MAR',
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                        Text(
-                          (13 + index).toString(),
-                          style: const TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                      ],
+                return InkWell(
+                  onTap: () {},
+                  child: Card(
+                    color: const Color.fromARGB(255, 235, 93, 12),
+                    shadowColor: const Color.fromARGB(255, 235, 93, 12),
+                    elevation: 5,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          const Text(
+                            'MAR',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          Text(
+                            (13 + index).toString(),
+                            style: const TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 );
@@ -211,4 +213,15 @@ class _ComprarAsientosState extends State<ComprarAsientos> {
       ),
     );
   }
+}
+
+class ItemModel {
+  String title;
+  bool isSelected;
+  Color color;
+
+  ItemModel(
+      {required this.title,
+      this.isSelected = false,
+      this.color = Colors.white});
 }
