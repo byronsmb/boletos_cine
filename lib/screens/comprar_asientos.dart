@@ -150,7 +150,7 @@ class _ComprarAsientosState extends State<ComprarAsientos> {
           ),
           Container(
             height: 40,
-            //color: Colors.amber,
+
             //width:
             child: ListView.builder(
               itemCount: 4,
