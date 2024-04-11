@@ -116,7 +116,7 @@ class _ComprarAsientosState extends State<ComprarAsientos> {
           Container(
             height: 60,
             //color: Colors.amber,
-            //width:
+
             child: ListView.builder(
               itemCount: 6,
               scrollDirection: Axis.horizontal,
